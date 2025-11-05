@@ -15,3 +15,9 @@ document.querySelector('#creacc').addEventListener('click', function(e){
     e.preventDefault(); // chặn hành vi mặc định của phần tử
     window.location.href = "/Form-create/create_account.html";
 });
+$(document).ready(function() {
+    $("#form-login").submit(function(e) {
+        e.preventDefault(); // chặn gửi form thật
+        window.location.href = "/Main/main.html"; // chuyển hướng
+    });
+});
