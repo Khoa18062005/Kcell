@@ -1,0 +1,68 @@
+body{
+    background: url('/asset/image02.png');
+    background-size: cover;
+    background-position-y: 10px;
+    color: white;
+}
+#wrapper{
+    min-height: 100vh; /* điều chỉnh kích thước tránh bị zoom hình nền*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-create{
+    max-width: 500px;
+    width: 100%;
+    /* flex-grow: 1; tăng chiều dài ô */
+    background-color: rgba(28,41,98,0.8);
+    box-shadow: 0px 0px 17px rgba(255,255,255,0.8);
+    padding: 30px 30px 40px;
+    border-radius: 10px;
+}
+.input-text{
+    font-style: italic;
+    color: #cccccc;
+}
+.form-heading{
+    text-align: center;
+}
+
+.form-input{
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    box-sizing: border-box; /* giúp thụt lụi chữ trong padding nhưng ko dài ô */
+}
+.form-input:hover{
+    box-shadow: 0px 0px 17px white;
+}
+/* focus: lúc nhập và blur: không nhập */
+.form-input:focus{
+    border: 2px solid yellow;
+    box-shadow: 0px 0px 17px yellow;
+    outline: none;
+}
+.form-submit{
+    margin-top: 20px;
+    padding: 10px 0px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+}
+.form-submit:hover{
+    background-color: yellow;
+}
+.btn-dn{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    background: white;
+}
+.btn-dn:hover{
+    background-color: green;
+    color: white;
+}
